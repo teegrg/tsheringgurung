@@ -1,0 +1,16 @@
+.home__container {
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 50px;
+    border-bottom: 2px solid black;
+}
+
+.home__text {
+    font-size: 6em;
+}
+
+.home__text__last {
+    font-size: 3em;
+    padding-top: 50px;
+    font-weight: ;
+}

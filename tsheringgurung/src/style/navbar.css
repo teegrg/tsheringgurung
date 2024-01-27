@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.229);
+}
+
+.nav__side {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo > img {
+    width: 50px;
+}
