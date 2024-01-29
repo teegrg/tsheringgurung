@@ -1,0 +1,14 @@
+.footer__container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    padding: 0 50px 0 50px;
+    border-top: 2px solid black;
+}
+
+.footer__icon {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}

@@ -3,15 +3,19 @@
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.229);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(237, 231, 226);
 }
 
 .nav__side {
     display: flex;
     align-items: center;
+    font-size: larger;
     gap: 25px;
 }
 
 .logo > img {
-    width: 50px;
+    width: 75px;
 }

@@ -1,16 +1,59 @@
 .home__container {
-    height: 100vh;
-    padding-top: 100px;
-    padding-left: 50px;
-    border-bottom: 2px solid black;
+  height: 75vh;
+  padding-top: 100px;
+  padding-left: 50px;
+  border-bottom: 2px solid black;
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit;
+}
+
+@keyframes fade-out {
+  /* 25% { opacity: 0.5;} */
+  85%, 100% {opacity: 0; scale: 1.5;}
 }
 
 .home__text {
-    font-size: 6em;
+  font-size: 6em;
 }
 
 .home__text__last {
-    font-size: 3em;
-    padding-top: 50px;
-    font-weight: ;
+  font-size: 3em;
+  padding-top: 50px;
+  color: rgba(0, 0, 0, 0.75);
+  /* font-weight:  */
+}
+
+.project {
+  width: 600px;
+  margin: 50px 25% 50px 25%;
+}
+
+.project__text {
+  padding: 25px 0 25px 0;
+  text-align: center;
+}
+
+.img {
+  scale: .8; opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry 100px;
+}
+
+@keyframes fade-in {
+  to { scale: 1; opacity: 1;}
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__1 > a > img {
+  width: 600px;
+}
+
+.project__2 > img {
+  width: 600px;
 }
