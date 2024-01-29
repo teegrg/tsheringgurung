@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className="project">
         <div className="project__1">
-          <a href="keepssake.netlify.app" target="_blank">
+          <a href="https://keepssake.netlify.app/" target="_blank">
             <img className="img" src={project1} alt="pic" />
             <div className="project__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
