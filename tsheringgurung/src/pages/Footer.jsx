@@ -8,7 +8,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function Footer() {
   return (
     <div className="footer__container">
-      <div>
+      <div className="footer__text">
         <Link to="/" ><div>Home</div></Link>
         <Link to="/about" ><div>About</div></Link>
         <Link to="/work" ><div>Work</div></Link>
