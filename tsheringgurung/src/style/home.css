@@ -6,6 +6,7 @@
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;
+  font-family: 'Roboto Slab', serif;
 }
 
 @keyframes fade-out {
@@ -35,6 +36,7 @@
 }
 
 .img {
+  width: 600px;
   scale: .8; opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
@@ -48,12 +50,4 @@
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.project__1 > a > img {
-  width: 600px;
-}
-
-.project__2 > img {
-  width: 600px;
 }
