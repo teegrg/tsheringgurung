@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 import "../style/footer.css";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,10 +11,14 @@ function Footer() {
   return (
     <div className="footer__container">
       <div className="footer__text">
-        <Link to="/" ><div>Home</div></Link>
-        <Link to="/about" ><div>About</div></Link>
-        <Link to="/work" ><div>Work</div></Link>
-        <Link to="contact" ><div>Contact</div></Link>
+      <ScrollLink to="home" smooth={true} offset={-50}>
+          <div>Home</div>
+        </ScrollLink>
+        <ScrollLink to="about" smooth={true} offset={-50}> 
+          <div>About</div>
+        </ScrollLink>
+        {/* <Link to="/work" ><div>Work</div></Link> */}
+        <a href="mailto: teegurung@gmail.com"><div>Contact</div></a>
       </div>
       <div className="footer__icon">
         <a href="https://www.linkedin.com/in/tsheringgurungny/" target="_blank" ><LinkedInIcon/></a>
