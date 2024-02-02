@@ -4,7 +4,11 @@ import About from "../component/About"
 
 import "../style/home.css";
 import project1 from "./pic/project1.png";
-import project2 from "./pic/project2.png";
+import project2 from "./pic/splitz.png";
+import project3 from "./pic/namastecard.png";
+import project4 from "./pic/curator.png";
+
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 function Home() {
   const [role, setRole] = useState("Developer");
@@ -22,19 +26,20 @@ function Home() {
 
   return (
     <>
-      <div className="home__container">
+      <div className="home__container" id="home">
         <div className="home__text">Tshering Gurung</div>
         <div className="home__text">
           FullStack Software <span className="changing-word">{role}</span>
         </div>
         <div className="home__text__last">Made in New York, US</div>
       </div>
-      <About/>
+      <About />
       <div className="project">
         <div className="project__1">
           <a href="https://keepssake.netlify.app/" target="_blank">
             <img className="img" src={project1} alt="pic" />
             <div className="project__text">
+              <div className="title">KEEPSAKE <ArrowOutwardIcon/></div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
               ipsam nisi aperiam quod itaque consectetur culpa, rerum aliquam
               vel excepturi molestiae quas suscipit dolore eum maiores unde
@@ -45,22 +50,25 @@ function Home() {
         <div className="project__2">
           <img className="img" src={project2} alt="pic" />
           <div className="project__text">
+          <div className="title">SPLITZ <ArrowOutwardIcon/></div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
             ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
             cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
           </div>
         </div>
         <div className="project__3">
-          <img className="img" src={project1} alt="pic" />
+          <img className="img" src={project3} alt="pic" />
           <div className="project__text">
+          <div className="title">NAMASTE CARDS <ArrowOutwardIcon/></div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
             ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
             cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
           </div>
         </div>
         <div className="project__4">
-          <img className="img" src={project2} alt="pic" />
+          <img className="img" src={project4} alt="pic" />
           <div className="project__text">
+          <div className="title">THE CURATOR <ArrowOutwardIcon/></div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vitae
             ex voluptatum culpa hic eaque in sed. Ad in quas placeat distinctio
             cumque nobis molestias delectus. Itaque voluptas cumque tenetur?
