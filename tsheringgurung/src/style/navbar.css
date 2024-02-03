@@ -6,9 +6,13 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: rgb(237, 231, 226);
+  backdrop-filter: blur(10px);
+  background-color: rgba(237, 231, 226, 0.7);
+  transition: background-color 0.3s ease; 
 }
-
+.nav.scrolled {
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+}
 .nav__side {
   display: flex;
   align-items: center;
@@ -37,5 +41,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width:600px) {
+  .nav__side {
+    gap: 10px;
   }
 }
