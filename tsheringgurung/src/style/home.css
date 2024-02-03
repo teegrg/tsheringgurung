@@ -98,3 +98,16 @@ a {
 .card__arrow {
   padding-top: 31px;
 }
+
+@media (max-width:600px) {
+  .home__text {
+    font-size: 2em;
+  }
+
+  .img {
+    width: 300px;
+  }
+  .project__text {
+    width: 300px;
+  }
+}

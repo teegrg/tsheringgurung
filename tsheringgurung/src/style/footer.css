@@ -40,3 +40,10 @@
     transform: translateY(-5px); /* Adjust the bounce height as needed */
   }
 }
+
+@media (max-width: 600px) {
+  .footer__text,
+  .footer__icon {
+    gap: 10px;
+  }
+}

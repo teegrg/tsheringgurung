@@ -53,3 +53,19 @@
     padding: 7px;
 }
 
+@media (max-width:600px) {
+    .about {
+        flex-direction: column;
+    }
+    .about__text {
+        font-size: 2em;
+    }
+    .about__text__body {
+        font-size: large;
+        text-align: center;
+    }
+
+    .about__icon__wrapper {
+        flex-wrap: wrap;
+    }
+}
