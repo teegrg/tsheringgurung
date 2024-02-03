@@ -56,13 +56,15 @@
 @media (max-width:600px) {
     .about {
         flex-direction: column;
+        padding: 25px 25px 50px 25px;
     }
     .about__text {
         font-size: 2em;
+        margin-left: 35px;
     }
     .about__text__body {
         font-size: large;
-        text-align: center;
+        text-align: start;
     }
 
     .about__icon__wrapper {

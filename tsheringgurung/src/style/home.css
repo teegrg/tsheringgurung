@@ -2,28 +2,36 @@
   height: 75vh;
   padding-top: 100px;
   padding-left: 50px;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 @keyframes fade-out {
   /* 25% { opacity: 0.5;} */
-  85%, 100% {opacity: 0; scale: 1.5;}
+  85%,
+  100% {
+    opacity: 0;
+    scale: 1.5;
+  }
 }
 
 .img {
   width: 600px;
-  scale: .8; opacity: 0;
+  scale: 0.8;
+  opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
   animation-range: entry 100px;
 }
 
 @keyframes fade-in {
-  to { scale: 1; opacity: 1;}
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 a {
@@ -64,12 +72,12 @@ a {
 
 .title__text {
   position: relative;
-  text-decoration: none; 
+  text-decoration: none;
   padding-top: 3.5px;
 }
 
 .title__text::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -84,7 +92,7 @@ a {
 }
 
 .arrow {
-  padding-left: 5PX;
+  padding-left: 5px;
   transform: scale(1);
   color: rgb(128, 128, 128);
 }
@@ -99,9 +107,25 @@ a {
   padding-top: 31px;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
+  .home__container {
+    margin-top: 100px;
+    border-bottom: none;
+    height: 65vh;
+  }
   .home__text {
     font-size: 2em;
+  }
+  @keyframes fade-out {
+    65%,
+    100% {
+      opacity: 0;
+      scale: 2;
+    }
+  }
+
+  .home__text__last {
+    font-size: larger;
   }
 
   .img {
