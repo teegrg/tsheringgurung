@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 import "../style/footer.css";
@@ -12,13 +11,13 @@ function Footer() {
     <div className="footer__container">
       <div className="footer__text">
       <ScrollLink to="home" smooth={true} offset={-50}>
-          <div>Home</div>
+          <div className="footer__home">Home</div>
         </ScrollLink>
         <ScrollLink to="about" smooth={true} offset={-50}> 
-          <div>About</div>
+          <div className="footer__about">About</div>
         </ScrollLink>
         {/* <Link to="/work" ><div>Work</div></Link> */}
-        <a href="mailto: teegurung@gmail.com"><div>Contact</div></a>
+        <a href="mailto: teegurung@gmail.com"><div className="footer__contact">Contact</div></a>
       </div>
       <div className="footer__icon">
         <a href="https://www.linkedin.com/in/tsheringgurungny/" target="_blank" ><LinkedInIcon/></a>
